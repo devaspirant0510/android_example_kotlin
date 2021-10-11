@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:title="frag1"
+        android:icon="@mipmap/ic_launcher_round"
+        android:id="@+id/frag12"/>
+    <item
+        android:title="frag2"
+        android:icon="@mipmap/ic_launcher_round"
+        android:id="@+id/frag22"/>
+    <item
+        android:title="frag3"
+        android:icon="@mipmap/ic_launcher_round"
+        android:id="@+id/frag32"/>
+</menu>

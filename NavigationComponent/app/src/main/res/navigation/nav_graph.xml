@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/frag12">
+
+    <fragment
+        android:id="@+id/frag12"
+        android:name="dev.seh.navigationcomponent.Frag1"
+        tools:layout="@layout/frag1"
+        android:label="Frag1" >
+        <action
+            android:id="@+id/action_frag12_to_moreInfoFrag"
+            app:destination="@id/moreInfoFrag" />
+    </fragment>
+    <fragment
+        android:id="@+id/frag22"
+        android:name="dev.seh.navigationcomponent.Frag2"
+        tools:layout="@layout/frag2"
+        android:label="Frag2" />
+    <fragment
+        android:id="@+id/frag32"
+        android:name="dev.seh.navigationcomponent.Frag3"
+        tools:layout="@layout/frag3"
+        android:label="Frag3" />
+    <fragment
+        android:id="@+id/moreInfoFrag"
+        android:name="dev.seh.navigationcomponent.MoreInfoFrag"
+        tools:layout="@layout/frag_more_info"
+        android:label="MoreInfoFrag" >
+        <action
+            android:id="@+id/action_moreInfoFrag_to_moreMoreInfoFrag"
+            app:destination="@id/moreMoreInfoFrag" />
+    </fragment>
+    <fragment
+        android:id="@+id/moreMoreInfoFrag"
+        tools:layout="@layout/frag_more_more_info"
+        android:name="dev.seh.navigationcomponent.MoreMoreInfoFrag"
+        android:label="MoreMoreInfoFrag" />
+</navigation>
